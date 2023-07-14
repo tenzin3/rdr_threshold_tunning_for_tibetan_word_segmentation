@@ -58,13 +58,12 @@ for threshold in THREHOLD_LIST:
     relative_path = "src/word_segmentation_rules_generator/data/" + rdr_file_path
     file_path = os.path.join(current_dir, relative_path)
     lines_count = count_lines(file_path)
-
+   
     #Printing the values
     print("Threshold Value: >", threshold)
     print(f"Total runtime of the program is {end - begin}")
     print('Number of lines', lines_count)
-    print('hell')
-    print("Training accuracy Value:> ",known_training_acc+ unknown_training_acc+ overall_training_acc )
-    print("Testing accuracy Value:> ",known_testing_acc+ unknown_testing_acc+ overall_testing_acc)
+    print("Training accuracy Value:> ",known_training_acc, unknown_training_acc, overall_training_acc )
+    print("Testing accuracy Value:> ",known_testing_acc, unknown_testing_acc, overall_testing_acc)
 
 
