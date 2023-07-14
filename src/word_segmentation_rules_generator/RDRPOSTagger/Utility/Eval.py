@@ -123,7 +123,9 @@ def computeAccuracies(fullDictFile, goldStandardCorpus, taggedCorpus):
                 countCorrectUNKN += 1
 
     if countUNKN == 0:
-        return countCorrectKN * 100.0 / countKN, 0.0, count * 100.0 / numwords
+        # return countCorrectKN * 100.0 / countKN, 0.0, count * 100.0 / numwords
+        return countCorrectKN * 100.0 / countKN, 'No unknown words', count * 100.0 / numwords
+
     else:
         return (
             countCorrectKN * 100.0 / countKN,
