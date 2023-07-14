@@ -3,7 +3,7 @@ import os
 import sys
 
 from src.word_segmentation_rules_generator.train_tag_rdr.train_tag_rdr import tag_rdr, train_rdr
-from src.word_segmentation_rules_generator.eval_rdr_result.eval_rdr_result import eval_rdr_result
+from src.word_segmentation_rules_generator.eval_rdr_result.eval_rdr_result import eval_rdr_result, eval_rdr_known_unknown_result
 
 
 
@@ -62,8 +62,17 @@ for threshold in THREHOLD_LIST:
     #Printing the values
     print("Threshold Value: >", threshold)
     print(f"Total runtime of the program is {end - begin}")
-    print('Number of lines', lines_count)
+    print('Number of lines in rules', lines_count)
     print("Training accuracy Value:> ",training_accuracy)
     print("Testing accuracy Value:> ",testing_accuracy)
+    #Finding the accuracy of training and testing data set
+    #Finding the accuracy of training and testing data set
+    training_countKN, training_countUNKN, training_numwords, known_training_acc, unknown_training_acc, overall_training_acc = eval_rdr_known_unknown_result()
+    testing_countKN, testing_countUNKN, testing_numwords,known_testing_acc, unknown_testing_acc, overall_testing_acc = eval_rdr_known_unknown_result('TIB_test_maxmatched_tagged.txt', 'TIB_test_maxmatched.txt.TAGGED')
+    print('Training data values:> ',training_countKN, training_countUNKN, training_numwords)
+    print("Training accuracy Value:> ",known_training_acc, unknown_training_acc, overall_training_acc )
+    print('Testing data values:> ',testing_countKN, testing_countUNKN, testing_numwords)
+    print("Testing accuracy Value:> ",known_testing_acc, unknown_testing_acc, overall_testing_acc)
+
 
 

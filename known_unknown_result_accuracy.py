@@ -49,8 +49,8 @@ for threshold in THREHOLD_LIST:
     sys.stdout = sys.__stdout__
     
     #Finding the accuracy of training and testing data set
-    known_training_acc, unknown_training_acc, overall_training_acc = eval_rdr_known_unknown_result()
-    known_testing_acc, unknown_testing_acc, overall_testing_acc = eval_rdr_known_unknown_result('TIB_test_maxmatched_tagged.txt', 'TIB_test_maxmatched.txt.TAGGED')
+    training_countKN, training_countUNKN, training_numwords, known_training_acc, unknown_training_acc, overall_training_acc = eval_rdr_known_unknown_result()
+    testing_countKN, testing_countUNKN, testing_numwords,known_testing_acc, unknown_testing_acc, overall_testing_acc = eval_rdr_known_unknown_result('TIB_test_maxmatched_tagged.txt', 'TIB_test_maxmatched.txt.TAGGED')
     
     #Finding number of rules 
     rdr_file_path = 'TIB_train_maxmatched_tagged.txt.RDR'
@@ -62,8 +62,10 @@ for threshold in THREHOLD_LIST:
     #Printing the values
     print("Threshold Value: >", threshold)
     print(f"Total runtime of the program is {end - begin}")
-    print('Number of lines', lines_count)
+    print('Number of lines in rules', lines_count)
+    print('Training data values:> ',training_countKN, training_countUNKN, training_numwords)
     print("Training accuracy Value:> ",known_training_acc, unknown_training_acc, overall_training_acc )
+    print('Testing data values:> ',testing_countKN, testing_countUNKN, testing_numwords)
     print("Testing accuracy Value:> ",known_testing_acc, unknown_testing_acc, overall_testing_acc)
 
 
