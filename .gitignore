@@ -8,6 +8,7 @@ output.txt
 create_token_2.py
 test_create_token.py
 test_rdr_tag.py
+SCRDRlearner.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -138,3 +139,50 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+src/word_segmentation_rules_generator/data/TIB_train_maxmatched.txt.TAGGED
+src/word_segmentation_rules_generator/data/TIB_train_maxmatched_tagged.txt.RDR
+src/word_segmentation_rules_generator/data/TIB_train_maxmatched_tagged.txt.RDR
+src/word_segmentation_rules_generator/data/demo_test.txt.TAGGED
+src/word_segmentation_rules_generator/data/demo.txt
+.gitignore
+src/word_segmentation_rules_generator/data/demo.txt.DICT
+src/word_segmentation_rules_generator/data/TIB_test_maxmatched.txt.TAGGED
+src/word_segmentation_rules_generator/data/demo.txt
+src/word_segmentation_rules_generator/data/demo.txt.TAGGED
+src/word_segmentation_rules_generator/data/demo.txt
+src/word_segmentation_rules_generator/data/demo.txt.RDR
+src/word_segmentation_rules_generator/data/demo.txt
+src/word_segmentation_rules_generator/data/TIB_train_maxmatched_tagged.txt.RDR
+src/word_segmentation_rules_generator/data/TIB_test_maxmatched.txt.TAGGED
+src/word_segmentation_rules_generator/data/TIB_train_maxmatched_tagged.txt.RDR
+src/word_segmentation_rules_generator/data/TIB_test_maxmatched.txt.TAGGED
+src/word_segmentation_rules_generator/data/demo.txt
+src/word_segmentation_rules_generator/data/TIB_test_maxmatched.txt.TAGGED
+src/word_segmentation_rules_generator/data/TIB_test_maxmatched.txt.TAGGED
+src/word_segmentation_rules_generator/data/demo_test.txt
+src/word_segmentation_rules_generator/data/TIB_train_maxmatched_tagged.txt.RDR
+.gitignore
+src/word_segmentation_rules_generator/data/TIB_train_maxmatched_tagged.txt.RDR
+.gitignore
+src/word_segmentation_rules_generator/RDRPOSTagger/SCRDRlearner/SCRDRTreeLearner.py
+.gitignore
+src/word_segmentation_rules_generator/RDRPOSTagger/SCRDRlearner/SCRDRTreeLearner.py
+.gitignore
+src/word_segmentation_rules_generator/data/demo.txt
+.gitignore
+src/word_segmentation_rules_generator/data/TIB_train_maxmatched.txt.TAGGED
+src/word_segmentation_rules_generator/data/TIB_train_maxmatched_tagged.txt.RDR
+src/word_segmentation_rules_generator/data/TIB_train_maxmatched_tagged.txt.RDR
+src/word_segmentation_rules_generator/data/TIB_train_maxmatched_tagged.txt.RDR
+train_rdr.py
+tag_rdr.py
+src/word_segmentation_rules_generator/data/TIB_train_maxmatched.txt.TAGGED
+src/word_segmentation_rules_generator/data/TIB_train_maxmatched_tagged.txt.RDR
+src/word_segmentation_rules_generator/data/TIB_test_maxmatched.txt.TAGGED
+src/word_segmentation_rules_generator/data/TIB_train_maxmatched_tagged.txt.RDR
+src/word_segmentation_rules_generator/data/TIB_train_maxmatched.txt.TAGGED
+src/word_segmentation_rules_generator/data/demo.txt
+src/word_segmentation_rules_generator/data/TIB_train_maxmatched_tagged.txt.RDR
+src/word_segmentation_rules_generator/data/TIB_train_maxmatched.txt.TAGGED
+src/word_segmentation_rules_generator/data/demo.txt
+src/word_segmentation_rules_generator/RDRPOSTagger/SCRDRlearner/SCRDRTreeLearner.py
