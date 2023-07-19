@@ -174,9 +174,11 @@ class FWObject:
     def __init__(self, check: bool = False):
         self.context: List[Optional[str]] = []
         if check is False:
-            self.context = [None] * 13
+            self.context = [None] * 10
+            # self.context = [None] * 13
         else:
-            self.context = ["<W>", "<T>"] * 5 + ["<SFX>"] * 3  # type: ignore
+            # self.context = ["<W>", "<T>"] * 5 + ["<SFX>"] * 3  # type: ignore
+            self.context = ["<W>", "<T>"] * 5
         self.notNoneIds: List[int] = []
 
     @staticmethod
@@ -187,11 +189,11 @@ class FWObject:
         object.context[5] = tag
 
         decodedW = word
-        if len(decodedW) >= 4:
-            object.context[10] = decodedW[-2:]
-            object.context[11] = decodedW[-3:]
-        if len(decodedW) >= 5:
-            object.context[12] = decodedW[-4:]
+        # if len(decodedW) >= 4:
+        #     object.context[10] = decodedW[-2:]
+        #     object.context[11] = decodedW[-3:]
+        # if len(decodedW) >= 5:
+        #     object.context[12] = decodedW[-4:]
 
         if index > 0:
             preWord1, preTag1 = getWordTag(startWordTags[index - 1])
