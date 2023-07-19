@@ -8,7 +8,6 @@ output.txt
 create_token_2.py
 test_create_token.py
 test_rdr_tag.py
-SCRDRlearner.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

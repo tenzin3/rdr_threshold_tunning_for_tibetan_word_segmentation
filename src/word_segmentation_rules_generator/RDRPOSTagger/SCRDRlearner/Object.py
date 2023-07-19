@@ -12,10 +12,10 @@ class Object:
         "prevTag2",
         "prevTag1",
         "nextTag1",
-        "nextTag2",
-        "suffixL2",
-        "suffixL3",
-        "suffixL4",
+        "nextTag2"
+        # "suffixL2",
+        # "suffixL3",
+        # "suffixL4",
     ]
     # code = "def __init__(self"
     # for att in attributes:
@@ -74,14 +74,14 @@ def getObject(wordTags, index):  # Sequence of "Word/Tag"
     word, tag = getWordTag(wordTags[index])
     preWord1 = preTag1 = preWord2 = preTag2 = ""
     nextWord1 = nextTag1 = nextWord2 = nextTag2 = ""
-    suffixL2 = suffixL3 = suffixL4 = ""
+    # suffixL2 = suffixL3 = suffixL4 = ""
 
     decodedW = word
-    if len(decodedW) >= 4:
-        suffixL3 = decodedW[-3:]
-        suffixL2 = decodedW[-2:]
-    if len(decodedW) >= 5:
-        suffixL4 = decodedW[-4:]
+    # if len(decodedW) >= 4:
+    #     suffixL3 = decodedW[-3:]
+    #     suffixL2 = decodedW[-2:]
+    # if len(decodedW) >= 5:
+    #     suffixL4 = decodedW[-4:]
 
     if index > 0:
         preWord1, preTag1 = getWordTag(wordTags[index - 1])
@@ -102,10 +102,10 @@ def getObject(wordTags, index):  # Sequence of "Word/Tag"
         preTag2,
         preTag1,
         nextTag1,
-        nextTag2,
-        suffixL2,
-        suffixL3,
-        suffixL4,
+        nextTag2
+        # suffixL2,
+        # suffixL3,
+        # suffixL4,
     )
 
 
